@@ -2,11 +2,10 @@
 
 import { EventCard } from "@/components";
 import { Typography } from "@material-tailwind/react";
-import { getImagePrefix } from "../../utils/utils";
 
 const EVENTS = [
   {
-    img: `${getImagePrefix()}image/bukber_2026.jpeg`,
+    img: "image/bukber_2026.jpeg",
     title: "Buka Puasa Bersama 2026",
     desc: "Buka puasa bersama keluarga besar Paguyuban Asirin dalam suasana kebersamaan bulan Ramadhan.",
   },

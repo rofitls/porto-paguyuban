@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { Input, Button, Typography } from "@material-tailwind/react";
-import { getImagePrefix } from "../../utils/utils";
 
 function Hero() {
   return (
@@ -47,7 +46,7 @@ function Hero() {
           width={1024}
           height={1024}
           alt="team work"
-          src={`${getImagePrefix()}image/asirin.jpeg`}
+          src="image/asirin.jpeg"
           className="h-[36rem] w-full rounded-xl object-cover"
         />
       </div>

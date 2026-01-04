@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
-import { getImagePrefix } from "../../utils/utils";
 
 export function ContactForm() {
   const [active, setActive] = React.useState(0);
@@ -64,7 +63,7 @@ export function ContactForm() {
               <div className="flex items-center gap-4">
                 <Avatar
                   variant="rounded"
-                  src={`${getImagePrefix()}image/tio.png`}
+                  src="/image/tio.png"
                   alt="spotify"
                   size="sm"
                   className={`cursor-pointer ${active === 0 ? "opacity-100" : "opacity-50"
@@ -74,7 +73,7 @@ export function ContactForm() {
                 <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
                 <Avatar
                   variant="rounded"
-                  src={`${getImagePrefix()}image/rofi.jpeg`}
+                  src="/image/rofi.jpeg"
                   alt="spotify"
                   size="sm"
                   className={`cursor-pointer ${active === 1 ? "opacity-100" : "opacity-50"
