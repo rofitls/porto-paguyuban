@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { Typography, Card, CardBody, Avatar } from "@material-tailwind/react";
-import { getImagePrefix } from "../../utils/utils";
+
 
 export function Testimonial() {
   const [active, setActive] = React.useState(3);
@@ -50,7 +50,7 @@ export function Testimonial() {
               <div className="flex items-center gap-4">
                 <Avatar
                   variant="rounded"
-                  src={`${getImagePrefix()}image/avatar1.jpg`}
+                  src="image/avatar1.jpg"
                   alt="spotify"
                   size="sm"
                   className={`cursor-pointer ${
@@ -61,7 +61,7 @@ export function Testimonial() {
                 <div className="w-[1px] h-[36px] bg-blue-gray-100 "></div>
                 <Avatar
                   variant="rounded"
-                  src={`${getImagePrefix()}image/avatar2.jpg`}
+                  src="image/avatar2.jpg"
                   alt="spotify"
                   size="sm"
                   className={`cursor-pointer ${
@@ -72,7 +72,7 @@ export function Testimonial() {
                 <div className="w-[1px] h-[36px] bg-blue-gray-100" />
                 <Avatar
                   variant="rounded"
-                  src={`${getImagePrefix()}image/avatar3.jpg`}
+                  src="image/avatar3.jpg"
                   alt="spotify"
                   size="sm"
                   className={`cursor-pointer ${
