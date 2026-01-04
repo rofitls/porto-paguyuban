@@ -10,12 +10,14 @@ import Resume from "./resume";
 import Testimonial from "./testimonial";
 import PopularClients from "./popular-clients";
 import ContactForm from "./contact-form";
+import VisionMission from "./vision-mission";
 
 export default function Portfolio() {
   return (
     <>
       <Navbar />
       <Hero />
+      <VisionMission />
       {/* <Clients /> */}
       {/* <Skills /> */}
       <Events />
