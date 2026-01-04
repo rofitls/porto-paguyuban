@@ -18,6 +18,9 @@ import {
   Bars3Icon,
   ClockIcon,
   BanknotesIcon,
+  UsersIcon,
+  HandRaisedIcon,
+  HeartIcon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
@@ -25,6 +28,11 @@ const NAV_MENU = [
     name: "Vision & Mission",
     icon: EyeIcon,
     href: "#vision-mission",
+  },
+    {
+    name: "Silsilah",
+    icon: UsersIcon,
+    href: "#silsilah",
   },
   {
     name: "Timeline",
@@ -35,6 +43,11 @@ const NAV_MENU = [
     name: "Events",
     icon: CalendarDaysIcon,
     href: "#events",
+  },
+    {
+    name: "Doa Acara",
+    icon: HeartIcon,
+    href: "#doa",
   },
   {
     name: "Laporan Kas",

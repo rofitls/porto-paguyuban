@@ -15,6 +15,7 @@ import Donation from "./donation";
 import DoaAcara from "./doa-acara";
 import Timeline from "./timeline";
 import LaporanKas from "./laporan-kas";
+import FamilyTree from "./family-tree";
 
 export default function Portfolio() {
   return (
@@ -25,6 +26,9 @@ export default function Portfolio() {
       </section>
       <section id="vision-mission">
         <VisionMission />
+      </section>
+      <section id="silsilah">
+        <FamilyTree />
       </section>
       {/* <Clients /> */}
       {/* <Skills /> */}
@@ -37,7 +41,9 @@ export default function Portfolio() {
       {/* <Resume /> */}
       {/* <Testimonial /> */}
       {/* <PopularClients /> */}
-      <DoaAcara />
+      <section id="doa">
+        <DoaAcara />
+      </section>
       <Donation />
       <section id="kas">
         <LaporanKas />
