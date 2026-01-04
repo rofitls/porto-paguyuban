@@ -11,23 +11,40 @@ import {
   UserCircleIcon,
   CommandLineIcon,
   Squares2X2Icon,
+  EyeIcon,
+  CalendarDaysIcon,
+  PhoneIcon,
   XMarkIcon,
   Bars3Icon,
+  ClockIcon,
+  BanknotesIcon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   {
-    name: "Page",
-    icon: RectangleStackIcon,
+    name: "Vision & Mission",
+    icon: EyeIcon,
+    href: "#vision-mission",
   },
   {
-    name: "Account",
-    icon: UserCircleIcon,
+    name: "Timeline",
+    icon: ClockIcon,
+    href: "#timeline",
   },
   {
-    name: "Docs",
-    icon: CommandLineIcon,
-    href: "#",
+    name: "Events",
+    icon: CalendarDaysIcon,
+    href: "#events",
+  },
+  {
+    name: "Laporan Kas",
+    icon: BanknotesIcon,
+    href: "#kas",
+  },
+  {
+    name: "Contact",
+    icon: PhoneIcon,
+    href: "#contact",
   },
 ];
 
@@ -39,16 +56,12 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
-        as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
-        variant="paragraph"
-        color="gray"
-        className="flex items-center gap-2 font-medium text-gray-900"
+      <a
+        href={href}
+        className="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition"
       >
         {children}
-      </Typography>
+      </a>
     </li>
   );
 }

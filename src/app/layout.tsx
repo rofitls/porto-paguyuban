@@ -11,9 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js + Tailwind Portfolio Page",
+  title: "Paguyuban Asirin",
   description:
-    "Introducing Tailwind Portfolio Page, a versatile and stylish portfolio template built on the foundation of Tailwind CSS and Material Tailwind.",
+    "Website resmi Paguyuban Asirin – wadah silaturahmi, kebersamaan, dan kegiatan keluarga besar Asirin.",
 };
 
 export default function RootLayout({

@@ -2,28 +2,21 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { EventDetail } from "@/app/events";
+
 import {
   Card,
   CardHeader,
   CardBody,
   Typography,
   Button,
-  Dialog,
-  DialogBody,
-  DialogHeader,
 } from "@material-tailwind/react";
 
-interface EventCardProps {
-  img: string;
-  title: string;
-  desc: string;
+interface EventCardProps extends EventDetail {
+  onDetail: () => void;
 }
 
-export function EventCard({ img, title, desc }: EventCardProps) {
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => setOpen(!open);
-
+export function EventCard({ img, title, desc, onDetail }: EventCardProps) {
   return (
     <>
       {/* CARD */}
@@ -47,56 +40,11 @@ export function EventCard({ img, title, desc }: EventCardProps) {
             {desc}
           </Typography>
 
-          <Button color="gray" size="sm" onClick={handleOpen}>
+          <Button size="sm" color="gray" onClick={onDetail}>
             Lihat Selengkapnya
           </Button>
         </CardBody>
       </Card>
-
-      {/* MODAL DETAIL */}
-      <Dialog open={open} handler={handleOpen} size="lg">
-        <DialogHeader>{title}</DialogHeader>
-
-        <DialogBody divider>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Image
-              src={img}
-              alt={title}
-              width={768}
-              height={768}
-              className="rounded-lg object-cover w-full h-full"
-            />
-
-            <div>
-              <Typography className="mb-4 !text-gray-600">
-                {desc}
-              </Typography>
-
-              {/* DETAIL TAMBAHAN */}
-              <ul className="space-y-2 text-sm text-gray-700">
-                <li>
-                  📅 <strong>Tanggal:</strong> 15 Maret 2026
-                </li>
-                <li>
-                  📍 <strong>Lokasi:</strong> Rumah Keluarga Besar Asirin
-                </li>
-                <li>
-                  👤 <strong>PIC:</strong> Imam Prasetyo
-                </li>
-                <li>
-                  🍱 <strong>Konsumsi:</strong> Dibawa masing-masing
-                </li>
-              </ul>
-            </div>
-          </div>
-        </DialogBody>
-
-        <div className="flex justify-end p-4">
-          <Button variant="text" color="gray" onClick={handleOpen}>
-            Tutup
-          </Button>
-        </div>
-      </Dialog>
     </>
   );
 }
