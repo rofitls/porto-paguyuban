@@ -46,12 +46,12 @@ export const familyTree = {
       children: [
         {
           id: "unggul",
-          anak: "Zuhdi Unggul Lanang Kapisan",
+          anak: "Zuhdhii Lanang Unggul Kapisan",
           mantu: "-",
           photo:"",
         },
-        { id: "tia", anak: "Tia", mantu: "-", photo:"", },
-        { id: "bunga-rini", anak: "Bunga", mantu: "-", photo:"", },
+        { id: "tia", anak: "Sulistiyani Nurtiara Putri", mantu: "-", photo:"", },
+        { id: "bunga", anak: "Sitaresmi Bunga Sulistiyani", mantu: "-", photo:"", },
       ],
     },
 
@@ -61,8 +61,8 @@ export const familyTree = {
       mantu: "Retno Astuti",
       photo:"",
       children: [
-        { id: "tika", anak: "Tika", mantu: "-", photo:"", },
-        { id: "gendis", anak: "Gendis", mantu: "-", photo:"", },
+        { id: "tika", anak: "Kartika Restu Nabilah", mantu: "-", photo:"", },
+        { id: "gendis", anak: "Gendis Atha Ramadhani", mantu: "-", photo:"", },
       ],
     },
 
@@ -74,12 +74,12 @@ export const familyTree = {
       children: [
         {
           id: "andin",
-          anak: "Andind Nanda Aulia Permata",
+          anak: "Andin Nanda Aulia Permata",
           mantu: "-",
           photo:"",
         },
-        { id: "sasi", anak: "Sasi Kirana", mantu: "-", photo:"", },
-        { id: "keysha", anak: "Keysha", mantu: "-", photo:"", },
+        { id: "sasi", anak: "Sasikirana Azalia Ramadhani", mantu: "-", photo:"", },
+        { id: "keysha", anak: "Keysha Isnaini Azzahra", mantu: "-", photo:"", },
       ],
     },
 
@@ -91,7 +91,7 @@ export const familyTree = {
       children: [
         {
           id: "anggi",
-          anak: "Pelangi Arista Widya Prasetyo",
+          anak: "Pelangi Aristawidya Prasetyo",
           mantu: "-",
           photo:"",
         },
@@ -104,8 +104,8 @@ export const familyTree = {
       mantu: "Heni Dianasari",
       photo:"",
       children: [
-        { id: "djati", anak: "Djati", mantu: "-", photo:"", },
-        { id: "zafira", anak: "Zafira", mantu: "-", photo:"", },
+        { id: "djati", anak: "Muhammad Alif Nurdjati", mantu: "-", photo:"", },
+        { id: "zafira", anak: "Zhafira Nayara Qisya", mantu: "-", photo:"", },
       ],
     },
   ],
