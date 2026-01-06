@@ -41,7 +41,7 @@ export const familyTree = {
     {
       id: "rini",
       anak: "Rini Handayani",
-      mantu: "Edi Sulistyono",
+      mantu: "Edy Sulisityono",
       photo:"",
       children: [
         {
@@ -78,7 +78,7 @@ export const familyTree = {
           mantu: "-",
           photo:"",
         },
-        { id: "sasi", anak: "Sasikirana Azalia Ramadhani", mantu: "-", photo:"", },
+        { id: "sasi", anak: "Sasikirana Azalia Rahmadhani", mantu: "-", photo:"", },
         { id: "keysha", anak: "Keysha Isnaini Azzahra", mantu: "-", photo:"", },
       ],
     },
