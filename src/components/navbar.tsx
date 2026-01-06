@@ -21,11 +21,12 @@ import {
   UsersIcon,
   HandRaisedIcon,
   HeartIcon,
+  PhotoIcon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   {
-    name: "Vision & Mission",
+    name: "Visi & Misi",
     icon: EyeIcon,
     href: "#vision-mission",
   },
@@ -44,15 +45,20 @@ const NAV_MENU = [
     icon: CalendarDaysIcon,
     href: "#events",
   },
-    {
-    name: "Doa Acara",
-    icon: HeartIcon,
-    href: "#doa",
-  },
+  //   {
+  //   name: "Doa Acara",
+  //   icon: HeartIcon,
+  //   href: "#doa",
+  // },
   {
     name: "Laporan Kas",
     icon: BanknotesIcon,
     href: "#kas",
+  },
+  {
+    name: "Gallery",
+    icon: PhotoIcon,
+    href: "#gallery",
   },
   {
     name: "Contact",

@@ -16,6 +16,7 @@ import DoaAcara from "./doa-acara";
 import Timeline from "./timeline";
 import LaporanKas from "./laporan-kas";
 import FamilyTree from "./family-tree";
+import Gallery from "./gallery";
 
 export default function Portfolio() {
   return (
@@ -47,6 +48,9 @@ export default function Portfolio() {
       <Donation />
       <section id="kas">
         <LaporanKas />
+      </section>
+      <section id="gallery">
+        <Gallery />
       </section>
       <section id="contact">
         <ContactForm />
