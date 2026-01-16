@@ -7,48 +7,68 @@ import {
   Chip,
 } from "@material-tailwind/react";
 
-const TIMELINE = [
+interface TimelineItem {
+  month: string;
+  title: string;
+  desc: string;
+  highlight?: boolean;
+  date?: string;
+  location?: string;
+  consumption?: string[];
+  mapsUrl?: string;
+  documentationUrl?: string;
+}
+
+const TIMELINE: TimelineItem[] = [
   {
     month: "Februari",
     title: "Buka Puasa Bersama",
     highlight: false,
+    date: "28 Februari 2026",
+    location: "Tanjung Priok – Rumah Keluarga Budi",
     desc: "Kegiatan buka puasa bersama keluarga besar Paguyuban Asirin untuk mempererat silaturahmi di bulan Ramadhan.",
+    consumption: [
+      "Keluarga Budi: -",
+      "Keluarga Rini: -",
+      "Keluarga Heru: -",
+      "Keluarga Rosi: -",
+      "Keluarga Tio: -",
+      "Keluarga Teguh: -",
+      "Keluarga Opi: Pisang Goreng Madu",
+    ],
+    mapsUrl: "https://maps.app.goo.gl/ZeWpB96EM9v752BR7",
+    documentationUrl: "https://drive.google.com/",
   },
   {
     month: "April",
     title: "Silaturahmi Keluarga",
-    highlight: false,
     desc: "Pertemuan rutin dan silaturahmi antar anggota keluarga paguyuban.",
   },
   {
     month: "Juni",
     title: "Silaturahmi Keluarga",
-    highlight: false,
     desc: "Pertemuan rutin dan silaturahmi antar anggota keluarga paguyuban.",
   },
   {
     month: "Agustus",
     title: "Agustusan",
-    highlight: false,
     desc: "Perayaan Hari Kemerdekaan RI dengan lomba dan kegiatan kebersamaan.",
   },
   {
     month: "Oktober",
     title: "Silaturahmi Keluarga",
-    highlight: false,
     desc: "Pertemuan rutin dan silaturahmi antar anggota keluarga paguyuban.",
   },
   {
     month: "Desember",
     title: "Tahun Baruan",
-    highlight: false,
     desc: "Malam keakraban dan refleksi akhir tahun keluarga besar Paguyuban Asirin.",
   },
 ];
 
 export function Timeline() {
   return (
-    <section className="py-28 px-8 bg-white">
+    <section id="timeline" className="py-28 px-8 bg-white">
       <div className="container mx-auto max-w-screen-md">
         {/* HEADER */}
         <div className="mb-20 text-center">
@@ -69,35 +89,76 @@ export function Timeline() {
 
               <Card shadow={false} className="border border-gray-100">
                 <CardBody>
+                  {/* HEADER */}
                   <div className="flex items-center justify-between mb-2">
-                    <Typography
-                      variant="h6"
-                      color="blue-gray"
-                      className="font-bold"
-                    >
+                    <Typography variant="h6" className="font-bold">
                       {item.month}
                     </Typography>
 
                     {item.highlight && (
-                      <Chip
-                        color="green"
-                        size="sm"
-                        value="Agenda Utama"
-                      />
+                      <Chip color="green" size="sm" value="Agenda Utama" />
                     )}
                   </div>
 
-                  <Typography
-                    variant="h5"
-                    color="blue-gray"
-                    className="mb-2"
-                  >
+                  <Typography variant="h5" className="mb-2">
                     {item.title}
                   </Typography>
 
-                  <Typography className="font-normal !text-gray-500">
+                  <Typography className="font-normal !text-gray-500 mb-4">
                     {item.desc}
                   </Typography>
+
+                  {/* DETAIL INFO */}
+                  {(item.date || item.location) && (
+                    <ul className="text-sm text-gray-700 space-y-1 mb-4">
+                      {item.date && (
+                        <li>📅 <strong>Tanggal:</strong> {item.date}</li>
+                      )}
+                      {item.location && (
+                        <li>📍 <strong>Lokasi:</strong> {item.location}</li>
+                      )}
+                    </ul>
+                  )}
+
+                  {/* KONSUMSI */}
+                  {item.consumption && (
+                    <div className="mb-4">
+                      <Typography variant="small" className="font-semibold mb-2">
+                        🍱 Konsumsi:
+                      </Typography>
+                      <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+                        {item.consumption.map((c, idx) => (
+                          <li key={idx}>{c}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+
+                  {/* LINKS */}
+                  {(item.mapsUrl || item.documentationUrl) && (
+                    <div className="flex flex-wrap gap-4 text-sm">
+                      {item.mapsUrl && (
+                        <a
+                          href={item.mapsUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 underline"
+                        >
+                          🗺️ Lihat Lokasi
+                        </a>
+                      )}
+                      {item.documentationUrl && (
+                        <a
+                          href={item.documentationUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 underline"
+                        >
+                          📸 Dokumentasi
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </CardBody>
               </Card>
             </div>

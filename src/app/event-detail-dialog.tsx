@@ -45,7 +45,14 @@ export default function EventDetailDialog({
               <li>📅 <strong>Tanggal:</strong> {event.date}</li>
               <li>📍 <strong>Lokasi:</strong> {event.location}</li>
               <li>👤 <strong>PIC:</strong> {event.pic}</li>
-              <li>🍱 <strong>Konsumsi:</strong> {event.consumption}</li>
+              <li>
+              🍱 <strong>Konsumsi:</strong>
+                  <ul className="list-disc list-inside mt-2 space-y-1">
+                    {event.consumption.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+              </li>
               <li>
                 🗺️{" "}
                 <a

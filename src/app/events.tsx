@@ -12,7 +12,7 @@ export interface EventDetail {
   date: string;
   location: string;
   pic: string;
-  consumption: string;
+  consumption: string[];
   mapsUrl: string;
   linkDocumentation: string;
 }
@@ -26,7 +26,15 @@ const EVENTS: EventDetail[] = [
     date: "28 Februari 2026",
     location: "Tanjung Priok Rumah Bapak Budi",
     pic: "-",
-    consumption: "1. Keluarga Opi : Pisang Goreng Madu",
+    consumption: [
+      "Keluarga Budi: -",
+      "Keluarga Rini: -",
+      "Keluarga Heru: -",
+      "Keluarga Rosi: -",
+      "Keluarga Tio: -",
+      "Keluarga Teguh: -",
+      "Keluarga Opi: Pisang Goreng Madu",
+    ],
     mapsUrl: "https://maps.app.goo.gl/ZeWpB96EM9v752BR7",
     linkDocumentation: "-",
   },

@@ -40,11 +40,11 @@ const NAV_MENU = [
     icon: ClockIcon,
     href: "#timeline",
   },
-  {
-    name: "Events",
-    icon: CalendarDaysIcon,
-    href: "#events",
-  },
+  // {
+  //   name: "Events",
+  //   icon: CalendarDaysIcon,
+  //   href: "#events",
+  // },
   //   {
   //   name: "Doa Acara",
   //   icon: HeartIcon,

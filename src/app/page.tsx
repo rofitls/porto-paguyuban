@@ -36,9 +36,9 @@ export default function Portfolio() {
       <section id="timeline">
         <Timeline />
       </section>
-      <section id="events">
+      {/* <section id="events">
         <Events />
-      </section>
+      </section> */}
       {/* <Resume /> */}
       {/* <Testimonial /> */}
       {/* <PopularClients /> */}
