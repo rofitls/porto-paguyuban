@@ -26,7 +26,7 @@ const EVENTS: EventDetail[] = [
     date: "28 Februari 2026",
     location: "Tanjung Priok Rumah Bapak Budi",
     pic: "-",
-    consumption: "1. Keluarga Opi : Gorengan",
+    consumption: "1. Keluarga Opi : Pisang Goreng Madu",
     mapsUrl: "https://maps.app.goo.gl/ZeWpB96EM9v752BR7",
     linkDocumentation: "-",
   },
