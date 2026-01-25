@@ -1,19 +1,19 @@
 export const familyTree = {
   suami: "Asirin",
   istri: "Tjitjih Sukarsih",
-  photo:"/image/budi.jpeg",
+  photo:"",
   children: [
     {
       id: "budi",
       anak: "Budi Eko Kukilo",
       mantu: "Siti Aisyah",
-      photo:"/image/budi.jpeg",
+      photo:"/image/budi_isah.jpeg",
       children: [
         {
           id: "rofi",
           anak: "Rofi Tulus Syifa",
           mantu: "Soimatul Hidayah",
-          photo:"/image/rofi.jpeg",
+          photo:"/image/opi_ima.jpeg",
           children: [
             {
               id: "hana",
@@ -42,7 +42,7 @@ export const familyTree = {
       id: "rini",
       anak: "Rini Handayani",
       mantu: "Edy Sulisityono",
-      photo:"",
+      photo:"/image/edi_yeni.jpeg",
       children: [
         {
           id: "unggul",

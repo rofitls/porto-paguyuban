@@ -17,6 +17,7 @@ interface TimelineItem {
   consumption?: string[];
   mapsUrl?: string;
   documentationUrl?: string;
+  rundown?: string[];
 }
 
 const TIMELINE: TimelineItem[] = [
@@ -27,6 +28,13 @@ const TIMELINE: TimelineItem[] = [
     date: "28 Februari 2026",
     location: "Tanjung Priok – Rumah Keluarga Budi",
     desc: "Kegiatan buka puasa bersama keluarga besar Paguyuban Asirin untuk mempererat silaturahmi di bulan Ramadhan.",
+    rundown: [
+      "Pembukaan acara",
+      "Pembacaan doa",
+      "Makan bersama",
+      "Sesi kebersamaan dan keakraban",
+      "Penutupan acara",
+    ],
     consumption: [
       "Keluarga Budi: -",
       "Keluarga Rini: -",
@@ -34,6 +42,7 @@ const TIMELINE: TimelineItem[] = [
       "Keluarga Rosi: -",
       "Keluarga Tio: -",
       "Keluarga Teguh: -",
+      "Keluarga Mapud: ",
       "Keluarga Opi: Pisang Goreng Madu",
     ],
     mapsUrl: "https://maps.app.goo.gl/ZeWpB96EM9v752BR7",
@@ -118,6 +127,20 @@ export function Timeline() {
                         <li>📍 <strong>Lokasi:</strong> {item.location}</li>
                       )}
                     </ul>
+                  )}
+
+                  {/* RUNDOWN ACARA */}
+                  {item.rundown && (
+                    <div className="mb-4">
+                      <Typography variant="small" className="font-semibold mb-2">
+                        🕒 Rundown Acara:
+                      </Typography>
+                      <ol className="list-decimal list-inside space-y-1 text-sm text-gray-700">
+                        {item.rundown.map((step, idx) => (
+                          <li key={idx}>{step}</li>
+                        ))}
+                      </ol>
+                    </div>
                   )}
 
                   {/* KONSUMSI */}

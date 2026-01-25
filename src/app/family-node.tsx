@@ -1,26 +1,37 @@
 type FamilyNodeProps = {
   data: any;
+  onClick: (data: any) => void;
 };
 
-export default function FamilyNode({ data }: FamilyNodeProps) {
+export default function FamilyNode({ data, onClick }: FamilyNodeProps) {
   return (
     <div className="node-wrapper">
-      {/* GARIS DARI ORTU */}
       <div className="vertical-line" />
 
-      {/* CARD */}
-      <div className="card">
+      <div
+        className="card cursor-pointer hover:shadow-lg transition"
+        onClick={() =>
+          onClick({
+            name: data.anak,
+            pasangan: data.mantu,
+            photo: data.photo,
+          })
+        }
+      >
         <strong>{data.anak}</strong>
         <div className="text-sm">{data.mantu}</div>
       </div>
 
-      {/* CHILDREN */}
       {data.children && (
         <>
           <div className="horizontal-line" />
           <div className="children-row">
             {data.children.map((child: any) => (
-              <FamilyNode key={child.id} data={child} />
+              <FamilyNode
+                key={child.id}
+                data={child}
+                onClick={onClick}
+              />
             ))}
           </div>
         </>
