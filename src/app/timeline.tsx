@@ -44,7 +44,7 @@ const TIMELINE: TimelineItem[] = [
       "Keluarga Rini: -",
       "Keluarga Heru: -",
       "Keluarga Rosi: -",
-      "Keluarga Tio: Sambosa Beef & Bakpau Unti Kelapa",
+      "Keluarga Tio: Sambosa Beef, Bakpau Unti Kelapa, & Risol Bihun",
       "Keluarga Teguh: -",
       "Keluarga Mapud: -",
       "Keluarga Opi: Pisang Goreng Madu",
