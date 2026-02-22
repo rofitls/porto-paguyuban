@@ -27,7 +27,7 @@ const EVENTS: EventDetail[] = [
     location: "Tanjung Priok Rumah Bapak Budi",
     pic: "-",
     consumption: [
-      "Keluarga Budi: -",
+      "Keluarga Budi: Sop Kimlo & Gorengan",
       "Keluarga Rini: -",
       "Keluarga Heru: -",
       "Keluarga Rosi: -",

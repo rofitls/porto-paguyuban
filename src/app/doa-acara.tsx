@@ -26,18 +26,18 @@ export function DoaAcara() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {/* DOWNLOAD PDF */}
-              <a
+              {/* <a
                 href="/docs/doa-acara-paguyuban-asirin.pdf"
                 download
               >
                 <Button color="green" size="lg">
                   📥 Download Doa Acara (PDF)
                 </Button>
-              </a>
+              </a> */}
 
               {/* LIHAT ONLINE */}
               <a
-                href="/docs/doa-acara-paguyuban-asirin.pdf"
+                href="https://quran.nu.or.id/tahlil"
                 target="_blank"
                 rel="noopener noreferrer"
               >
