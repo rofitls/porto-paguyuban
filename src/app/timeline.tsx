@@ -53,9 +53,27 @@ const TIMELINE: TimelineItem[] = [
     documentationUrl: "https://drive.google.com/",
   },
   {
-    month: "April",
-    title: "Silaturahmi Keluarga",
-    desc: "Pertemuan rutin dan silaturahmi antar anggota keluarga paguyuban.",
+    month: "Mei",
+    title: "Silaturahmi Keluarga (Ulang Tahun Om Edi)",
+    highlight: true,
+    date: "10 Mei 2026",
+    location: "Bekasi – Rumah Keluarga Rini",
+    desc: "Pertemuan rutin dan silaturahmi antar anggota keluarga paguyuban sekaligus ulang tahun Om Edi",
+    rundown: [
+      
+    ],
+    consumption: [
+      "Keluarga Budi:",
+      "Keluarga Rini:",
+      "Keluarga Heru:",
+      "Keluarga Rosi:",
+      "Keluarga Tio:",
+      "Keluarga Teguh:",
+      "Keluarga Mapud:",
+      "Keluarga Opi:",
+    ],
+    mapsUrl: "",
+    documentationUrl: "https://drive.google.com/",
   },
   {
     month: "Juni",
