@@ -65,7 +65,7 @@ const TIMELINE: TimelineItem[] = [
     consumption: [
       "Keluarga Budi:",
       "Keluarga Rini:",
-      "Keluarga Heru:",
+      "Keluarga Heru: Ikan Bili Cabe Ijo",
       "Keluarga Rosi:",
       "Keluarga Tio: Ayam",
       "Keluarga Teguh:",
