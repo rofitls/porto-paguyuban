@@ -63,11 +63,11 @@ const TIMELINE: TimelineItem[] = [
       
     ],
     consumption: [
-      "Keluarga Budi:",
+      "Keluarga Budi:Blakutak & Ikan",
       "Keluarga Rini:",
       "Keluarga Heru: Ikan Bili Cabe Ijo",
       "Keluarga Rosi:",
-      "Keluarga Tio: Ayam",
+      "Keluarga Tio: Ayam Goreng & Sosis Solo",
       "Keluarga Teguh:",
       "Keluarga Mapud: Puding & Bihun Cabe Ijo",
       "Keluarga Opi: Pisang Goreng Madu",
