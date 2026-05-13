@@ -13,9 +13,9 @@ export default function LaporanKas() {
 
         {/* Ringkasan */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-          <SummaryCard title="Total Saldo Kas" value="Rp 0" />
+          <SummaryCard title="Total Saldo Kas" value="Rp 170.000" />
           <SummaryCard title="Jumlah Keluarga" value="8 Keluarga" />
-          <SummaryCard title="Update Terakhir" value="Maret 2026" />
+          <SummaryCard title="Update Terakhir" value="Mei 2026" />
         </div>
 
         {/* Button Spreadsheet */}

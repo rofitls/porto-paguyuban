@@ -55,7 +55,6 @@ const TIMELINE: TimelineItem[] = [
   {
     month: "Mei",
     title: "Silaturahmi Keluarga (Ulang Tahun Om Edi)",
-    highlight: true,
     date: "10 Mei 2026",
     location: "Bekasi – Rumah Keluarga Rini",
     desc: "Pertemuan rutin dan silaturahmi antar anggota keluarga paguyuban sekaligus ulang tahun Om Edi",
