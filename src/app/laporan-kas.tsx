@@ -20,7 +20,7 @@ export default function LaporanKas() {
 
         {/* Button Spreadsheet */}
         <a
-          href="https://docs.google.com/spreadsheets/d/XXXXXXX"
+          href="https://docs.google.com/spreadsheets/d/1nvRWkp_8p5_8y5K0xn4EPSMDU0Tw_FUAzswjsJ9XNdI/edit?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition"
