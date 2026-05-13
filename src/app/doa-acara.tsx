@@ -37,7 +37,7 @@ export function DoaAcara() {
 
               {/* LIHAT ONLINE */}
               <a
-                href="https://quran.nu.or.id/tahlil"
+                href="https://akuislam.com/blog/ibadah/doa-tahlil-arwah/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
