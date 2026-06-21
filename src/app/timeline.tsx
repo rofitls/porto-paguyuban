@@ -78,7 +78,7 @@ const TIMELINE: TimelineItem[] = [
     month: "Juli",
     title: "Silaturahmi Keluarga",
     highlight: true,
-    date: "26 Juli 2026",
+    date: "12 Juli 2026",
     location: "Sumur Batu – Rumah Keluarga Heru",
     desc: "Pertemuan rutin dan silaturahmi antar anggota keluarga paguyuban",
     rundown: [
